@@ -1,6 +1,5 @@
 package se.edtek.y2015.d4;
 
-import javax.xml.bind.DatatypeConverter;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -27,7 +26,8 @@ public class Solution {
     private String md5(MessageDigest md, String s) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         md.update(s.getBytes("UTF-8"));
         byte[] digest = md.digest();
-        return DatatypeConverter.printHexBinary(digest).toUpperCase();
+        // return DatatypeConverter.printHexBinary(digest).toUpperCase();
+        return "";
     }
 
     public static void main(String[] args) throws UnsupportedEncodingException, NoSuchAlgorithmException {

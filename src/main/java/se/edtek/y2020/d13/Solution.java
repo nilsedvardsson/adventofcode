@@ -1,6 +1,5 @@
 package se.edtek.y2020.d13;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import se.edtek.common.SolutionParent;
 
 import java.util.ArrayList;
